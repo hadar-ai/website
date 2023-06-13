@@ -18,6 +18,7 @@
     "next": "13.4.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "svg-react-loader": "^0.4.6",
     "the-new-css-reset": "^1.8.4",
     "typescript": "5.1.3"
   },
