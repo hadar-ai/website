@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './page.module.css'
 
-import { Bulb, Flow1, HomeGraphic1, HomeGraphic2 } from "@/components/Svg"
+import { Bulb, Code, Flow1, HomeGraphic1, HomeGraphic2, Person, Trophy } from "@/components/Svg"
 import classnames from 'classnames'
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_with_content}>
                 <div>
-                  <Bulb />
+                  <Code />
                 </div>
                 <div className={styles.sub}>
                   <p>Provide Data</p>
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_with_content}>
                 <div>
-                  <Bulb />
+                  <Person />
                 </div>
                 <div className={styles.sub}>
                   <p>Verify Data</p>
@@ -76,7 +76,7 @@ export default function Home() {
               </div>
               <div className={styles.icon_with_content}>
                 <div>
-                  <Bulb />
+                  <Trophy />
                 </div>
                 <div className={styles.sub}>
                   <p>Sponsor Data</p>

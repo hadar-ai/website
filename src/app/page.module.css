@@ -21,7 +21,7 @@
       @apply flex items-center place-content-center w-16 h-16 rounded-md bg-col4 mr-6 flex-shrink-0 shadow-icon;
 
       &>svg {
-          @apply w-8 h-8;
+        @apply w-8 h-8 fill-current;
       }
     }
   }
