@@ -5,7 +5,24 @@
     @apply bg-gradient-to-b from-col2 to-black py-28;
   }
 
-  .subtext {
-    @apply text-xl text-coolGray-400;
+  .sub {
+    & > p:first-child {
+      @apply text-2xl font-heading mb-2;
+    }
+    &>p:nth-child(2) {
+      @apply text-xl text-coolGray-400;
+    }
+  }
+
+  .icon_with_content {
+    @apply flex place-content-start items-center mb-12;
+
+    & > div:first-child {
+      @apply flex items-center place-content-center w-16 h-16 rounded-md bg-col4 mr-6 flex-shrink-0 shadow-icon;
+
+      &>svg {
+          @apply w-8 h-8;
+      }
+    }
   }
 }

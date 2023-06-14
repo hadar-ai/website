@@ -17,6 +17,9 @@ module.exports = {
         heading: ['var(--font-comfortaa)'],
         body: ['var(--font-noto-sans)'],
       },
+      boxShadow: {
+        'icon': '8px -7px 2px 0 rgba(27,38,59,0.9)'
+      },
     },
     colors: {
       ...colors,

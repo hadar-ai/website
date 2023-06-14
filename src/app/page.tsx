@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import styles from './page.module.css'
 
-import { HomeGraphic1, HomeGraphic2 } from "@/components/Svg"
+import { Bulb, Flow1, HomeGraphic1, HomeGraphic2 } from "@/components/Svg"
+import classnames from 'classnames'
 
 export default function Home() {
   return (
@@ -26,18 +28,66 @@ export default function Home() {
             </div>
           </div>
           <div className="flex place-content-between items-center mt-28">
-            <div>
-              <p className="text-3xl font-heading mb-2">Easily search for datasets</p>
-              <p className={styles.subtext}>Made possible with clear metadata, usage and community votes.</p>
+            <div className={styles.sub}>
+              <p>Easily search for datasets</p>
+              <p>Made possible with clear metadata, usage and community votes.</p>
             </div>
-            <div>
-              <p className="text-3xl font-heading mb-2">Curate missing datasets</p>
-              <p className={styles.subtext}>Can’t find what you need? Publish a request and get it created.</p>
+            <div className={styles.sub}>
+              <p>Curate missing datasets</p>
+              <p>Can’t find what you need? Publish a request and get it created.</p>
             </div>
+          </div>
+          <div className="text-center mt-28">
+            <Link className='btn' href="/whitepaper">Learn more</Link>
           </div>
         </div>
       </div>
-      <div className={styles.gradient_block_1}></div>
+      <div className={styles.gradient_block_1}>
+        <div className="content-width-wrapper">
+          <p className="font-heading text-center text-5xl leading-tight">Contribute to datasets.<br />Share in the future value.</p>
+          <div className="mt-20 flex place-content-between items-start">
+            <div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Bulb />
+                </div>
+                <div className={styles.sub}>
+                  <p>Request Data</p>
+                  <p>Set standards and invite verifiers to help with curation.</p>
+                </div>
+              </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Bulb />
+                </div>
+                <div className={styles.sub}>
+                  <p>Provide Data</p>
+                  <p>Publish high quality dataasets.</p>
+                </div>
+              </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Bulb />
+                </div>
+                <div className={styles.sub}>
+                  <p>Verify Data</p>
+                  <p>Review data and guarantee its quality.</p>
+                </div>
+              </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Bulb />
+                </div>
+                <div className={styles.sub}>
+                  <p>Sponsor Data</p>
+                  <p>Reduce the cost of data access for all.</p>
+                </div>
+              </div>
+            </div>
+            <Flow1 className="w-7/12 ml-8" />
+          </div>
+        </div>
+      </div>
       <div className="py-20"></div>
     </div>
   )
