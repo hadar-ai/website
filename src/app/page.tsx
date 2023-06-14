@@ -138,14 +138,14 @@ export default function Home() {
           <p className={classnames(styles.content_sub_text, "text-center mb-20")}>Combined 20+ years building tech products in ML and blockchain that served millions of users, managed billions in AUM, and generated billions in trading volume.</p>
           <div className='flex place-content-around items-center'>
             <div className={styles.team_member}>
-              <Image alt="Sylvia Chen" src="/images/sylvia.jpg" width={244} height={281} />
+              <Image alt="Sylvia Chen" src="/images/sylvia.jpg" width={244} height={281} unoptimized />
               <div>
                 <h3>Sylvia Chen</h3>
                 <p>CEO, Co-founder</p>
               </div>
             </div>
             <div className={styles.team_member}>
-              <Image alt="Ramesh Nair" src="/images/ram.jpg" width={244} height={281} />
+              <Image alt="Ramesh Nair" src="/images/ram.jpg" width={244} height={281} unoptimized />
               <div>
                 <h3>Ramesh Nair</h3>
                 <p>CTO, Co-founder</p>
