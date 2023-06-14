@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './page.module.css'
 
 import { Bulb, Code, Community, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
@@ -23,7 +24,7 @@ export default function Home() {
           <div className="flex place-content-space-between items-center">
             <HomeGraphic2 className="w-5/6" />
             <div className="ml-12">
-              <p className="text-5xl font-heading mb-5">Access data</p>
+              <h2 className="text-5xl font-heading mb-5">Access data</h2>
               <p className="text-2xl text-coolGray-300">Hadar helps you find datasets that are usually proprietary, inaccessible or expensive.</p>
             </div>
           </div>
@@ -44,7 +45,7 @@ export default function Home() {
       </div>
       <div className={styles.gradient_block_1}>
         <div className="content-width-wrapper">
-          <p className="font-heading text-center text-5xl leading-tight">Contribute to datasets.<br />Share in the future value.</p>
+          <h2 className="font-heading text-center text-5xl leading-tight">Contribute to datasets.<br />Share in the future value.</h2>
           <div className="mt-20 flex place-content-between items-start">
             <div>
               <div className={styles.icon_with_content}>
@@ -95,7 +96,7 @@ export default function Home() {
         <div className="content-width-wrapper">
           <div className="flex place-content-center items-center">
             <div className='w-7/12'>
-              <p className="text-5xl font-heading mb-10">Our Mission</p>
+              <h2 className="text-5xl font-heading mb-10">Our Mission</h2>
               <p className="text-2xl mb-20">At Hadar, we believe that a decentralized data bank that is openly curated and accessible by the crowd can help democratize and promote innovation.</p>
               <Link className='btn' href="/whitepaper">Learn more</Link>
             </div>
@@ -106,7 +107,7 @@ export default function Home() {
                 </div>
                 <div className={styles.sub}>
                   <p>Openly curated datasets</p>
-                  <p>High quality datasets that are crowd-sourced.</p>
+                <p>High quality datasets that are crowd-sourced.</p>
                 </div>
               </div>
               <div className={styles.icon_with_content}>
@@ -128,6 +129,36 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.gradient_block_1}>
+        <div className="content-width-wrapper">
+          <h2 className="text-5xl text-center font-heading mb-10">Team</h2>
+          <p className={classnames(styles.content_sub_text, "text-center mb-20")}>Combined 20+ years building tech products in ML and blockchain that served millions of users, managed billions in AUM, and generated billions in trading volume.</p>
+          <div className='flex place-content-around items-center'>
+            <div className={styles.team_member}>
+              <Image alt="Sylvia Chen" src="/images/sylvia.jpg" width={244} height={281} />
+              <div>
+                <h3>Sylvia Chen</h3>
+                <p>CEO, Co-founder</p>
+              </div>
+            </div>
+            <div className={styles.team_member}>
+              <Image alt="Ramesh Nair" src="/images/ram.jpg" width={244} height={281} />
+              <div>
+                <h3>Ramesh Nair</h3>
+                <p>CTO, Co-founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.gradient_block_1}>
+        <div className="content-width-wrapper">
+          <div className='w-7/12'>
+            <h2 className="text-5xl font-heading mb-10">Early Access</h2>
+            <p className="text-xl">We will grant limited access to early adopters along with a special welcome package.</p>
           </div>
         </div>
       </div>

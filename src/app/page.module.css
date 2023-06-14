@@ -2,7 +2,11 @@
 
 @layer components {
   .gradient_block_1 {
-    @apply bg-gradient-to-b from-col2 to-black py-28;
+    @apply bg-gradient-to-b from-col2 to-black py-28; 
+  }
+
+  .content_sub_text {
+    @apply text-xl text-coolGray-400;
   }
 
   .sub {
@@ -23,6 +27,14 @@
       &>svg {
         @apply w-8 h-8 fill-current;
       }
+    }
+  }
+
+  .team_member {
+    @apply m-4;
+
+    & > div {
+      @apply text-center mt-4;
     }
   }
 }

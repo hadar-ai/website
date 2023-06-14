@@ -43,7 +43,7 @@ export default function RootLayout({
       <body className='font-body min-h-screen'>
         <header className="content-width-wrapper flex place-content-between items-center py-6">
           <h1 className="text-3xl font-heading">
-            Hadar<span className='text-col6'>.ai</span>
+            <Link href="/">Hadar<span className='text-col6'>.ai</span></Link>
           </h1>
           <div className='font-heading'>
             <Link className='mr-10' href="/whitepaper">Whitepaper</Link>
