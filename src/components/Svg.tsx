@@ -5,5 +5,8 @@ import Bulb from '../images/bulb.svg'
 import Code from '../images/code.svg'
 import Person from '../images/person.svg'
 import Trophy from '../images/trophy.svg'
+import Nodes from '../images/nodes.svg'
+import Pay from '../images/pay.svg'
+import Community from '../images/community.svg'
 
-export { HomeGraphic1, HomeGraphic2, Flow1, Bulb, Code, Person, Trophy }
+export { Community, HomeGraphic1, HomeGraphic2, Flow1, Bulb, Code, Person, Trophy, Nodes, Pay }

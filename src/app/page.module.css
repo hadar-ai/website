@@ -9,7 +9,7 @@
     & > p:first-child {
       @apply text-2xl font-heading mb-2;
     }
-    &>p:nth-child(2) {
+    & > p:nth-child(2) {
       @apply text-xl text-coolGray-400;
     }
   }

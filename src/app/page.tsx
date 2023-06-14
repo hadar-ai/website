@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './page.module.css'
 
-import { Bulb, Code, Flow1, HomeGraphic1, HomeGraphic2, Person, Trophy } from "@/components/Svg"
+import { Bulb, Code, Community, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
 import classnames from 'classnames'
 
 export default function Home() {
@@ -83,12 +83,54 @@ export default function Home() {
                   <p>Reduce the cost of data access for all.</p>
                 </div>
               </div>
+              <div className='mt-20'>
+                <Link className='btn' href="/whitepaper">Learn more</Link>
+              </div>
             </div>
             <Flow1 className="w-7/12 ml-8" />
           </div>
         </div>
       </div>
-      <div className="py-20"></div>
+      <div className={styles.gradient_block_1}>
+        <div className="content-width-wrapper">
+          <div className="flex place-content-center items-center">
+            <div className='w-7/12'>
+              <p className="text-5xl font-heading mb-10">Our Mission</p>
+              <p className="text-2xl mb-20">At Hadar, we believe that a decentralized data bank that is openly curated and accessible by the crowd can help democratize and promote innovation.</p>
+              <Link className='btn' href="/whitepaper">Learn more</Link>
+            </div>
+            <div className='ml-20'>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Nodes />
+                </div>
+                <div className={styles.sub}>
+                  <p>Openly curated datasets</p>
+                  <p>High quality datasets that are crowd-sourced.</p>
+                </div>
+              </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Pay />
+                </div>
+                <div className={styles.sub}>
+                  <p>Profit-sharing</p>
+                  <p>Value shared among users who provide, curate and verify data.</p>
+                </div>
+              </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Community />
+                </div>
+                <div className={styles.sub}>
+                  <p>Decentralized Governance</p>
+                  <p>Built the community, governed by the community.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
