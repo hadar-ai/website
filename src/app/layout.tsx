@@ -40,8 +40,8 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className='font-body w-screen max-w-7xl mx-auto min-h-screen'>
-        <header className="flex place-content-between items-center px-7 py-6">
+      <body className='font-body min-h-screen'>
+        <header className="content-width-wrapper flex place-content-between items-center py-6">
           <h1 className="text-3xl font-heading">
             Hadar<span className='text-col6'>.ai</span>
           </h1>

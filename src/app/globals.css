@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "the-new-css-reset/css/reset.css";
-
 :root {
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -34,4 +32,8 @@ a {
   text-decoration: none;
 }
 
-
+@layer components {
+  .content-width-wrapper {
+    @apply w-9/12 max-w-5xl mx-auto;
+  }
+}
