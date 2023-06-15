@@ -5,6 +5,8 @@ import styles from './page.module.css'
 import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
 import classnames from 'classnames'
 import { Button } from '@/components/Button'
+import { sendToMailchimp } from './actions'
+import { useCallback } from 'react'
 
 export default function Home() {
   return (
@@ -164,15 +166,15 @@ export default function Home() {
               <p className="text-xl">We will grant limited access to early adopters along with a special welcome package.</p>
             </div>
             <div>
-              <form className='7/12'>
+              <form className='7/12' action={sendToMailchimp}>
                 <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
-                  <input type="text" maxLength={50} className='w-60'/>
+                  <input name="fullName" required={true} type="text" maxLength={50} className='w-60'/>
                 </div>
                 <div className="mb-10">
                   <label>Email address</label>
-                  <input type="email" className='w-60' />
+                  <input name="email" required={true} type="email" className='w-60' />
                 </div>
                 <div className="mb-10">
                   <label>Select all that apply</label>
@@ -201,7 +203,7 @@ export default function Home() {
                   <div className='mb-4'>
                     <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
                   </div>
-                  <Button>Submit</Button>
+                  <Button type="submit">Submit</Button>
                 </div>
               </form>
             </div>

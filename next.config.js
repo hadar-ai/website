@@ -3,6 +3,9 @@ const path = require('path')
 
 const nextConfig = {
   output: 'export',
+  experimental: {
+    serverActions: true,
+  },
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
 
