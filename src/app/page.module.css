@@ -5,6 +5,10 @@
     @apply bg-gradient-to-b from-col2 to-black py-28; 
   }
 
+  .standard_block_1 {
+    @apply bg-transparent py-28;
+  }
+
   .content_sub_text {
     @apply text-xl text-coolGray-400;
   }

@@ -4,6 +4,7 @@ import styles from './page.module.css'
 
 import { Bulb, Code, Community, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
 import classnames from 'classnames'
+import { Button } from '@/components/Button'
 
 export default function Home() {
   return (
@@ -156,10 +157,60 @@ export default function Home() {
       </div>
       <div className={styles.gradient_block_1}>
         <div className="content-width-wrapper">
-          <div className='w-7/12'>
-            <h2 className="text-5xl font-heading mb-10">Early Access</h2>
-            <p className="text-xl">We will grant limited access to early adopters along with a special welcome package.</p>
+          <div className='flex place-content-between items-center'>
+            <div className='w-4/12'>
+              <h2 className="text-5xl font-heading mb-10">Early Access</h2>
+              <p className="text-xl">We will grant limited access to early adopters along with a special welcome package.</p>
+            </div>
+            <div>
+              <form className='7/12'>
+                <a name="request_access" href="#"></a>
+                <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
+                <div className="mb-10">
+                  <label>Full name</label>
+                  <input type="text" maxLength={50} className='w-60'/>
+                </div>
+                <div className="mb-10">
+                  <label>Email address</label>
+                  <input type="email" className='w-60' />
+                </div>
+                <div className="mb-10">
+                  <label>Select all that apply</label>
+                  <div className='mb-1'>
+                    <input type="checkbox" name="interests" value="access" />
+                    <span className='ml-2'>I need to access datasets</span>
+                  </div>
+                  <div className='mb-1'>
+                    <input type="checkbox" name="interests" value="publish" />
+                    <span className='ml-2'>I want to publish datasets</span>
+                  </div>
+                  <div className='mb-1'>
+                    <input type="checkbox" name="interests" value="source" />
+                    <span className='ml-2'>I want to source datasets that don't exist</span>
+                  </div>
+                  <div className='mb-1'>
+                    <input type="checkbox" name="interests" value="verify" />
+                    <span className='ml-2'>I can verify datasets</span>
+                  </div>
+                  <div className='mb-1'>
+                    <input type="checkbox" name="interests" value="sponsor" />
+                    <span className='ml-2'>I want to sponsor dataset access</span>
+                  </div>
+                </div>
+                <div>
+                  <div className='mb-4'>
+                    <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
+                  </div>
+                  <Button>Submit</Button>
+                </div>
+              </form>
+            </div>
           </div>
+        </div>
+      </div>
+      <div className={styles.standard_block_1}>
+        <div className="content-width-wrapper">
+          footer here
         </div>
       </div>
     </div>

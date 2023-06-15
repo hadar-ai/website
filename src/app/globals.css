@@ -30,10 +30,26 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 1px solid var(--fgColor);
+}
+
+header a {
+  border-bottom: none;
+}
+
+label {
+  @apply block mb-2 font-heading text-coolGray-400;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  background-color: var(--fgColor);
+  color: var(--bgColor);
+  @apply rounded-md px-4 py-2;
 }
 
 @layer components {
   .btn {
+    border-bottom: none;
     @apply text-lg px-6 py-2 bg-col6 text-col1 font-body font-bold rounded-xl;
   }
 

@@ -47,7 +47,7 @@ export default function RootLayout({
           </h1>
           <div className='font-heading'>
             <Link className='mr-10' href="/whitepaper">Whitepaper</Link>
-            <Button>Request access</Button>
+            <Link className='btn' href="/#request_access">Request access</Link>
           </div>
         </header>
         {children}
