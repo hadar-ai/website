@@ -164,7 +164,7 @@ export default function Home() {
             </div>
             <div>
               <form className='7/12'>
-                <a name="request_access" href="#"></a>
+                <a id="request_access" href="#"></a>
                 <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
@@ -186,7 +186,7 @@ export default function Home() {
                   </div>
                   <div className='mb-1'>
                     <input type="checkbox" name="interests" value="source" />
-                    <span className='ml-2'>I want to source datasets that don't exist</span>
+                    <span className='ml-2'>I want to source datasets that don&apos;t exist</span>
                   </div>
                   <div className='mb-1'>
                     <input type="checkbox" name="interests" value="verify" />
