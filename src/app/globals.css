@@ -37,6 +37,10 @@ header a {
   border-bottom: none;
 }
 
+footer {
+  @apply py-28;
+}
+
 label {
   @apply block mb-2 font-heading text-coolGray-400;
 }
@@ -48,6 +52,15 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 @layer components {
+  .footer_link_column {
+    & > p {
+      @apply text-coolGray-400 font-bold mb-8;
+    }
+    li {
+      @apply mb-2;
+    }
+  }
+
   .btn {
     border-bottom: none;
     @apply text-lg px-6 py-2 bg-col6 text-col1 font-body font-bold rounded-xl;

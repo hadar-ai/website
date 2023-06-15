@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './page.module.css'
 
-import { Bulb, Code, Community, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
+import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Nodes, Pay, Person, Trophy } from "@/components/Svg"
 import classnames from 'classnames'
 import { Button } from '@/components/Button'
 
@@ -206,11 +206,6 @@ export default function Home() {
               </form>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles.standard_block_1}>
-        <div className="content-width-wrapper">
-          footer here
         </div>
       </div>
     </div>

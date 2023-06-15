@@ -8,5 +8,7 @@ import Trophy from '../images/trophy.svg'
 import Nodes from '../images/nodes.svg'
 import Pay from '../images/pay.svg'
 import Community from '../images/community.svg'
+import Twitter from '../images/twitter.svg'
+import Email from '../images/email.svg'
 
-export { Community, HomeGraphic1, HomeGraphic2, Flow1, Bulb, Code, Person, Trophy, Nodes, Pay }
+export { Community, HomeGraphic1, HomeGraphic2, Flow1, Bulb, Code, Person, Trophy, Nodes, Pay, Twitter, Email }

@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import './globals.css'
 import { Button } from '@/components/Button'
+import { Email, Twitter } from '@/components/Svg'
 
 const ComfortaaFont = Comfortaa({ 
   subsets: ['latin'], 
@@ -51,6 +52,32 @@ export default function RootLayout({
           </div>
         </header>
         {children}
+        <footer className="content-width-wrapper">
+          <div className='flex place-content-between items-start'>
+            <div className='w-6/12 flex place-content-start items-start text-sm'>
+              <div className="footer_link_column mr-20">
+                <p >Product</p>
+                <ul>
+                  <li><Link href="/whitepaper">Whitepaper</Link></li>
+                </ul>
+              </div>
+              <div className='footer_link_column'>
+                <p>Legal</p>
+                <ul>
+                  <li><Link href="/terms">Terms and conditions</Link></li>
+                  <li><Link href="/privacy">Privacy policy</Link></li>
+                </ul>
+              </div>
+              <div>
+              </div>
+            </div>
+            <div className='flex place-content-end items-center'>
+              <em className='mr-4'>Get in touch:</em>
+              <span className='inline-block w-6 h-6 mr-4'><a href="https://twitter.com/hadar_ai"><Twitter className='fill-current' /></a></span>
+              <span className='inline-block w-6 h-6'><a href="mailto:teamhadar@gmail.com"><Email className='fill-current' /></a></span>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   )
