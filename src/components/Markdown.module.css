@@ -1,0 +1,39 @@
+@tailwind components;
+
+@layer components {
+  .markdown {
+    @apply text-xl;
+
+    h1, h2 {
+      @apply font-heading text-coolGray-400;
+    }
+
+    h1 {
+      @apply text-5xl mb-12 mt-24;
+
+      &:first-child {
+        @apply mt-0;
+      }
+    }
+
+    h2 {
+      @apply text-3xl mb-8 mt-16;
+    }    
+    
+    h3 {
+      @apply text-xl font-bold mb-4 mt-12 text-coolGray-400;
+    }
+
+    p {
+      @apply my-4;
+    }
+        
+    strong, b {
+      font-weight: bolder;
+    }
+  
+    code {
+      @apply font-mono text-sm p-1 bg-white text-black;
+    }
+  }
+}

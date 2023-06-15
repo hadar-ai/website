@@ -5,11 +5,18 @@ const nextConfig = {
   output: 'export',
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
+
     config.module.rules.push({
       test: /\.svg$/,
       include: path.resolve(__dirname, 'src/images'),
       loader: 'svg-react-loader'
     })
+
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    })
+
     return config
   },  
 }
