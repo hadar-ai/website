@@ -48,7 +48,7 @@ export default function Home() {
         <div className="content-width-wrapper">
           <h2 className="font-heading text-center text-5xl leading-tight">Contribute to datasets.<br />Share in the future value.</h2>
           <div className="mt-20 flex place-content-between items-start">
-            <div>
+            <div className='mr-8'>
               <div className={styles.icon_with_content}>
                 <div>
                   <Bulb />
@@ -89,7 +89,7 @@ export default function Home() {
                 <Link className='btn' href="/whitepaper">Learn more</Link>
               </div>
             </div>
-            <Flow1 className="w-7/12 ml-8" />
+            <Flow1 className='w-7/12' />
           </div>
         </div>
       </div>
@@ -156,6 +156,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.gradient_block_1}>
+        <a id="request_access" href="#"></a>
         <div className="content-width-wrapper">
           <div className='flex place-content-between items-center'>
             <div className='w-4/12'>
@@ -164,7 +165,6 @@ export default function Home() {
             </div>
             <div>
               <form className='7/12'>
-                <a id="request_access" href="#"></a>
                 <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
