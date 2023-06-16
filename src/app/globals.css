@@ -66,6 +66,16 @@ input[type=text], input[type=email], input[type=password] {
     @apply text-lg px-6 py-2 bg-col6 text-col1 font-body font-bold rounded-xl;
   }
 
+  .box_info {
+    border-bottom: none;
+    @apply text-xl px-6 py-2 bg-col4 text-col5 font-body font-bold rounded-xl;
+  }
+
+  .box_error {
+    border-bottom: none;
+    @apply text-xl px-6 py-2 bg-red-400 text-col5 font-body font-bold rounded-xl;
+  }
+
   .content-width-wrapper {
     @apply w-9/12 max-w-5xl mx-auto;
   }

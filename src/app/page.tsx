@@ -2,24 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import {
-  Bulb,
-  Code,
-  Community,
-  Email,
-  Linkedin,
-  Flow1,
-  HomeGraphic1,
-  HomeGraphic2,
-  Nodes,
-  Pay,
-  Person,
-  Trophy,
-} from "@/components/Svg";
-import classnames from "classnames";
-import { Button } from "@/components/Button";
-import { sendToMailchimp } from "./actions";
-import { useCallback } from "react";
+import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Linkedin, Nodes, Pay, Person, Trophy } from "@/components/Svg"
+import classnames from 'classnames'
+import { Form } from '@/components/Form'
+import { sendToMailchimp } from '@/app/actions'
 
 export default function Home() {
   return (
@@ -229,17 +215,17 @@ export default function Home() {
       <div className={styles.gradient_block_1}>
         <a id="request_access" href="#"></a>
         <div className="content-width-wrapper">
-          <div className="flex place-content-between items-center">
-            <div className="w-4/12">
+          <div className='flex place-content-between items-center'>
+            <div className='w-4/12 flex-shrink-0'>
               <h2 className="text-5xl font-heading mb-10">Early Access</h2>
               <p className="text-xl">
                 We will grant limited access to early adopters along with a
                 special welcome package.
               </p>
             </div>
-            <div>
-              <form className="7/12" action={sendToMailchimp}>
-                <h3 className="text-2xl font-heading mb-10">Enter details</h3>
+            <div className='7/12 flex-grow-0'>
+              <Form className='w-full' endpoint={sendToMailchimp} successMessage='Thanks! Please follow the link in the email we have sent you to confirm your registration.'>
+                <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
                   <input
@@ -287,16 +273,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div>
-                  <div className="mb-4">
-                    <em className="text-sm">
-                      By submitting this form you agree to our{" "}
-                      <Link href="/terms">terms and conditions</Link> and{" "}
-                      <Link href="/privacy">privacy policy</Link>.
-                    </em>
-                  </div>
-                  <Button type="submit">Submit</Button>
+                  <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
                 </div>
-              </form>
+              </Form>
             </div>
           </div>
         </div>
