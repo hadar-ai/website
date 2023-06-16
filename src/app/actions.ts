@@ -37,7 +37,7 @@ export const sendToMailchimp = async (data: FormData) => {
       console.log(`...added: ${response.status}`);
     } catch (err: any) {
       console.error(`...error: ${err.message}`);
-      throw new Error(`You may have already signed up.`)
+      throw new Error(`You have already tried signing up. Please check your email for a confirmation link.`)
     }
   } catch (err: any) {
     return {

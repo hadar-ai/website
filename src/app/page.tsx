@@ -224,7 +224,7 @@ export default function Home() {
               </p>
             </div>
             <div className='7/12 flex-grow-0'>
-              <Form className='w-full' endpoint={sendToMailchimp} successMessage='Thanks! Please follow the link in the email we have sent you to confirm your registration.'>
+              <Form className='w-full' endpoint={sendToMailchimp} successMessage='Thanks. Please follow the confirmation link in the email we have sent you.'>
                 <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
