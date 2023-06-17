@@ -40,7 +40,7 @@
     & > div {
       @apply text-center mt-4;
       a {
-        @apply inline-block;
+        @apply inline-block border-none;
       }
     }
   }
