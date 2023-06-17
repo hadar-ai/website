@@ -3,6 +3,7 @@ import classnames from 'classnames'
 import { DefaultProps } from "./interfaces"
 import { LoadingIcon } from './Loading'
 import Link from 'next/link'
+import { WhitepaperLink } from './Links'
 
 interface Props extends DefaultProps {
   onClick?: () => void
@@ -20,9 +21,7 @@ export const Button: React.FunctionComponent<Props> = ({ className, children, on
 
 
 export const LearnMoreButton:React.FunctionComponent<DefaultProps> = ({ className }) => {
-  return (
-    <Link className={classnames("btn", className)} href="/whitepaper">Learn more</Link>
-  )
+  return <WhitepaperLink className={classnames("btn", className)}>Learn more</WhitepaperLink>
 }
 
 

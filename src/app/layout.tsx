@@ -4,6 +4,7 @@ import Link from 'next/link'
 import './globals.css'
 import { Button, RequestAccessButton } from '@/components/Button'
 import { Email, Twitter } from '@/components/Svg'
+import { WhitepaperLink } from '@/components/Links'
 
 const ComfortaaFont = Comfortaa({ 
   subsets: ['latin'], 
@@ -47,7 +48,7 @@ export default function RootLayout({
             <Link href="/">Hadar<span className='text-col6'>.ai</span></Link>
           </h1>
           <div className='font-heading'>
-            <Link href="/whitepaper">Whitepaper</Link>
+            <WhitepaperLink />
             <RequestAccessButton className='ml-10 max-md:hidden' />
           </div>
         </header>
@@ -58,7 +59,7 @@ export default function RootLayout({
               <div className="footer_link_column mr-20">
                 <p >Product</p>
                 <ul>
-                  <li><Link href="/whitepaper">Whitepaper</Link></li>
+                  <li><WhitepaperLink /></li>
                 </ul>
               </div>
               <div className='footer_link_column'>
