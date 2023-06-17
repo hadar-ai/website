@@ -53,8 +53,8 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="content-width-wrapper">
-          <div className='flex place-content-between items-start'>
-            <div className='w-6/12 flex place-content-start items-start text-sm'>
+          <div className='flex place-content-between items-start max-md:flex-col'>
+            <div className='w-6/12 flex place-content-start items-start text-sm max-md:w-full'>
               <div className="footer_link_column mr-20">
                 <p >Product</p>
                 <ul>
@@ -71,7 +71,7 @@ export default function RootLayout({
               <div>
               </div>
             </div>
-            <div className='flex place-content-end items-center'>
+            <div className='flex place-content-end items-center max-md:mt-20'>
               <em className='mr-4'>Get in touch:</em>
               <span className='inline-block w-6 h-6 mr-4'><a href="https://twitter.com/hadar_ai"><Twitter className='fill-current' /></a></span>
               <span className='inline-block w-6 h-6'><a href="mailto:teamhadar@gmail.com"><Email className='fill-current' /></a></span>

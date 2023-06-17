@@ -6,13 +6,20 @@ import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Linked
 import classnames from 'classnames'
 import { Form } from '@/components/Form'
 import { sendToMailchimp } from '@/app/actions'
+import { DefaultProps } from "@/components/interfaces";
+
+const LearnMoreButton:React.FunctionComponent<DefaultProps> = ({ className }) => {
+  return (
+    <Link className={classnames("btn", className)} href="/whitepaper">Learn more</Link>
+  )
+}
 
 export default function Home() {
   return (
     <div>
       <div className="content-width-wrapper my-32">
         <div className="flex place-content-between items-center">
-          <div className="w-6/12">
+          <div className="w-6/12 mr-20 flex-shrink-0 max-md:w-full max-md:text-center">
             <h1 className="text-5xl font-heading">
               Democratizing Data.
               <br />
@@ -23,15 +30,15 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <HomeGraphic1 className="w-5/6" />
+            <HomeGraphic1 className="w-5/6 flex-shrink max-md:hidden" />
           </div>
         </div>
       </div>
       <div className={styles.gradient_block_1}>
         <div className="content-width-wrapper">
-          <div className="flex place-content-space-between items-center">
-            <HomeGraphic2 className="w-5/6" />
-            <div className="ml-12">
+          <div className="flex place-content-space-between items-center max-md:flex-col">
+            <HomeGraphic2 className="w-5/6 max-md:w-full" />
+            <div className="ml-12 max-md:ml-0 max-md:mt-12">
               <h2 className="text-5xl font-heading mb-5">Access data</h2>
               <p className="text-2xl text-coolGray-300">
                 Hadar helps you find datasets that are usually proprietary,
@@ -39,14 +46,14 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex place-content-between items-center mt-28">
+          <div className="flex place-content-between items-center mt-28 max-md:flex-col max-md:mt-12">
             <div className={styles.sub}>
               <p>Easily search for datasets</p>
               <p>
                 Made possible with clear metadata, usage and community votes.
               </p>
             </div>
-            <div className={styles.sub}>
+            <div className={classnames(styles.sub, 'max-md:mt-10')}>
               <p>Curate missing datasets</p>
               <p>
                 Can’t find what you need? Publish a request and get it created.
@@ -54,9 +61,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-28">
-            <Link className="btn" href="/whitepaper">
-              Learn more
-            </Link>
+            <LearnMoreButton />
           </div>
         </div>
       </div>
@@ -67,8 +72,8 @@ export default function Home() {
             <br />
             Share in the future value.
           </h2>
-          <div className="mt-20 flex place-content-between items-start">
-            <div className="mr-8">
+          <div className="mt-20 flex place-content-between items-start max-md:flex-col-reverse max-md:items-center max-md:place-content-center">
+            <div className="mr-8 max-md:mr-0">
               <div className={styles.icon_with_content}>
                 <div>
                   <Bulb />
@@ -107,31 +112,27 @@ export default function Home() {
                   <p>Reduce the cost of data access for all.</p>
                 </div>
               </div>
-              <div className="mt-20">
-                <Link className="btn" href="/whitepaper">
-                  Learn more
-                </Link>
+              <div className="mt-20 max-md:text-center">
+                <LearnMoreButton />
               </div>
             </div>
-            <Flow1 className="w-7/12" />
+            <Flow1 className="w-7/12 max-md:w-full max-md:mb-10" />
           </div>
         </div>
       </div>
       <div className={styles.gradient_block_1}>
         <div className="content-width-wrapper">
-          <div className="flex place-content-center items-center">
-            <div className="w-7/12">
+          <div className="flex place-content-center items-center max-md:flex-col">
+            <div className="w-7/12 max-md:w-full">
               <h2 className="text-5xl font-heading mb-10">Our Mission</h2>
               <p className="text-2xl mb-20">
                 At Hadar, we believe that a decentralized data bank that is
                 openly curated and accessible by the crowd can help democratize
                 and promote innovation.
               </p>
-              <Link className="btn" href="/whitepaper">
-                Learn more
-              </Link>
+              <LearnMoreButton className="max-md:hidden" />              
             </div>
-            <div className="ml-20">
+            <div className="ml-20 max-md:ml-0">
               <div className={styles.icon_with_content}>
                 <div>
                   <Nodes />
@@ -162,6 +163,9 @@ export default function Home() {
                   <p>Built the community, governed by the community.</p>
                 </div>
               </div>
+              <div className="mt-20 text-center min-md:hidden">
+                <LearnMoreButton  />              
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +192,7 @@ export default function Home() {
               <div>
                 <h3>Silvia Chen</h3>
                 <p>CEO, Co-founder</p>
-                <a href="https://www.linkedin.com/in/silvia-chen/">
+                <a href="https://www.linkedin.com/in/silvia-chen/" className="mt-4">
                   <Linkedin />
                 </a>
               </div>
@@ -204,7 +208,7 @@ export default function Home() {
               <div>
                 <h3>Ramesh Nair</h3>
                 <p>CTO, Co-founder</p>
-                <a href="https://www.linkedin.com/in/hiddentao/">
+                <a href="https://www.linkedin.com/in/hiddentao/" className="mt-4">
                   <Linkedin />
                 </a>
               </div>
@@ -215,17 +219,16 @@ export default function Home() {
       <div className={styles.gradient_block_1}>
         <a id="request_access" href="#"></a>
         <div className="content-width-wrapper">
-          <div className='flex place-content-between items-center'>
-            <div className='w-4/12 flex-shrink-0'>
+          <div className='flex place-content-between items-center max-md:flex-col'>
+            <div className='w-5/12 flex-shrink-0 max-md:w-full'>
               <h2 className="text-5xl font-heading mb-10">Early Access</h2>
               <p className="text-xl">
                 We will grant limited access to early adopters along with a
                 special welcome package.
               </p>
             </div>
-            <div className='7/12 flex-grow-0'>
+            <div className='w-6/12 flex-grow-0 max-md:w-full max-md:mt-20'>
               <Form className='w-full' endpoint={sendToMailchimp} successMessage='Thanks. Please follow the confirmation link in the email we have sent you.'>
-                <h3 className='text-2xl font-heading mb-10'>Enter details</h3>
                 <div className="mb-10">
                   <label>Full name</label>
                   <input

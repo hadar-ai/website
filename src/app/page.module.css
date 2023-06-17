@@ -39,6 +39,9 @@
 
     & > div {
       @apply text-center mt-4;
+      a {
+        @apply inline-block;
+      }
     }
   }
 }
