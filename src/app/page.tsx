@@ -6,13 +6,7 @@ import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Linked
 import classnames from 'classnames'
 import { Form } from '@/components/Form'
 import { sendToMailchimp } from '@/app/actions'
-import { DefaultProps } from "@/components/interfaces";
-
-const LearnMoreButton:React.FunctionComponent<DefaultProps> = ({ className }) => {
-  return (
-    <Link className={classnames("btn", className)} href="/whitepaper">Learn more</Link>
-  )
-}
+import { LearnMoreButton, RequestAccessButton } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -28,6 +22,9 @@ export default function Home() {
             <p className="text-3xl mt-8">
               Infrastructure for curating and accessing high quality datasets.
             </p>
+            <div className='mt-20 min-md:hidden'>
+              <RequestAccessButton />
+            </div>
           </div>
           <div>
             <HomeGraphic1 className="w-5/6 flex-shrink max-md:hidden" />

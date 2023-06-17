@@ -2,7 +2,7 @@ import { Comfortaa, Noto_Sans } from 'next/font/google'
 import Link from 'next/link'
 
 import './globals.css'
-import { Button } from '@/components/Button'
+import { Button, RequestAccessButton } from '@/components/Button'
 import { Email, Twitter } from '@/components/Svg'
 
 const ComfortaaFont = Comfortaa({ 
@@ -47,8 +47,8 @@ export default function RootLayout({
             <Link href="/">Hadar<span className='text-col6'>.ai</span></Link>
           </h1>
           <div className='font-heading'>
-            <Link className='mr-10' href="/whitepaper">Whitepaper</Link>
-            <Link className='btn' href="/#request_access">Request access</Link>
+            <Link href="/whitepaper">Whitepaper</Link>
+            <RequestAccessButton className='ml-10 max-md:hidden' />
           </div>
         </header>
         {children}
