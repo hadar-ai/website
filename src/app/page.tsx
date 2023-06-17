@@ -22,7 +22,7 @@ export default function Home() {
             <p className="text-3xl mt-8">
               Infrastructure for curating and accessing high quality datasets.
             </p>
-            <div className='mt-20 min-md:hidden'>
+            <div className='mt-20'>
               <RequestAccessButton />
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
                   <p>Built the community, governed by the community.</p>
                 </div>
               </div>
-              <div className="mt-20 text-center min-md:hidden">
+              <div className="mt-20 text-center hidden max-md:block">
                 <LearnMoreButton  />              
               </div>
             </div>
