@@ -20,7 +20,7 @@ export default function Home() {
               Shaping AI.
             </h1>
             <p className="text-3xl mt-8">
-              Infrastructure for curating and accessing high quality datasets.
+              Infrastructure for incentivizing the supply of high quality datasets.
             </p>
             <div className='mt-20'>
               <RequestAccessButton />
@@ -36,24 +36,23 @@ export default function Home() {
           <div className="flex place-content-space-between items-center max-md:flex-col">
             <HomeGraphic2 className="w-5/6 max-md:w-full" />
             <div className="ml-12 max-md:ml-0 max-md:mt-12">
-              <h2 className="text-5xl font-heading mb-5">Access data</h2>
+              <h2 className="text-5xl font-heading mb-5">Publish data</h2>
               <p className="text-2xl text-coolGray-300">
-                Hadar helps you find datasets that are usually proprietary,
-                inaccessible or expensive.
+                Hadar helps you monetize your dataset for training AI models in an open, accessible manner.
               </p>
             </div>
           </div>
           <div className="flex place-content-between items-center mt-28 max-md:flex-col max-md:mt-12">
-            <div className={styles.sub}>
-              <p>Easily search for datasets</p>
+            <div className={classnames(styles.sub, 'max-w-sm')}>
+              <p>Easily supply datasets</p>
               <p>
-                Made possible with clear metadata, usage and community votes.
+                Upload and set pricing terms. Our infrastructure handles the rest.
               </p>
             </div>
-            <div className={classnames(styles.sub, 'max-md:mt-10')}>
-              <p>Curate missing datasets</p>
+            <div className={classnames(styles.sub, 'max-w-sm max-md:mt-10')}>
+              <p>Ensure high quality</p>
               <p>
-                Can’t find what you need? Publish a request and get it created.
+                Customize your metadata. Add fresh data regularly. Invite verifiers.
               </p>
             </div>
           </div>
@@ -71,17 +70,6 @@ export default function Home() {
           </h2>
           <div className="mt-20 flex place-content-between items-start max-md:flex-col-reverse max-md:items-center max-md:place-content-center">
             <div className="mr-8 max-md:mr-0">
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Bulb />
-                </div>
-                <div className={styles.sub}>
-                  <p>Request Data</p>
-                  <p>
-                    Set standards and invite verifiers to help with curation.
-                  </p>
-                </div>
-              </div>
               <div className={styles.icon_with_content}>
                 <div>
                   <Code />
@@ -109,6 +97,17 @@ export default function Home() {
                   <p>Reduce the cost of data access for all.</p>
                 </div>
               </div>
+              <div className={styles.icon_with_content}>
+                <div>
+                  <Bulb />
+                </div>
+                <div className={styles.sub}>
+                  <p>Request Data</p>
+                  <p>
+                    Set standards and invite verifiers to help with curation.
+                  </p>
+                </div>
+              </div>
               <div className="mt-20 max-md:text-center">
                 <LearnMoreButton />
               </div>
@@ -123,9 +122,9 @@ export default function Home() {
             <div className="w-7/12 max-md:w-full">
               <h2 className="text-5xl font-heading mb-10">Our Mission</h2>
               <p className="text-2xl mb-20">
-                At Hadar, we believe that a decentralized data bank that is
-                openly curated and accessible by the crowd can help democratize
-                and promote innovation.
+                At Hadar, we believe that an incentivized data bank that is
+                openly curated and accessible by the crowd is needed to democratize
+                and promote AI innovation.
               </p>
               <LearnMoreButton className="max-md:hidden" />              
             </div>
@@ -135,8 +134,8 @@ export default function Home() {
                   <Nodes />
                 </div>
                 <div className={styles.sub}>
-                  <p>Openly curated datasets</p>
-                  <p>High quality datasets that are crowd-sourced.</p>
+                  <p>Open access</p>
+                  <p>Niché and ex-proprietary datasets now available to all.</p>
                 </div>
               </div>
               <div className={styles.icon_with_content}>
