@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import './globals.css'
 import { Button, RequestAccessButton } from '@/components/Button'
-import { Email, Twitter } from '@/components/Svg'
+import { Email, Logo, Twitter } from '@/components/Svg'
 import { WhitepaperLink } from '@/components/Links'
 
 const ComfortaaFont = Comfortaa({ 
@@ -38,26 +38,28 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#ffffff" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#edf6f9" />
+        <meta name="theme-color" content="#edf6f9" />
       </head>
-      <body className='font-body min-h-screen'>
-        <header className="content-width-wrapper flex place-content-between items-center py-6">
-          <h1 className="text-3xl font-heading">
-            <Link href="/">Hadar<span className='text-col6'>.ai</span></Link>
-          </h1>
-          <div className='font-heading'>
-            <WhitepaperLink />
-            <RequestAccessButton className='ml-10 max-md:hidden' />
+      <body suppressHydrationWarning={true} className='font-body min-h-screen relative'>
+        <header className="absolute top-0 left-0 right-0 h-20">
+          <div className="container flex place-content-between items-center py-6">
+            <h1 className="text-2xl font-heading inline-svg">
+              <Link href="/"><Logo className="mr-2 mb-2" /><span>Hadar<span className='text-col5'>.ai</span></span></Link>
+            </h1>
+            <div className='font-heading'>
+              <WhitepaperLink />
+              <RequestAccessButton className='ml-10 max-md:hidden' />
+            </div>
           </div>
         </header>
         {children}
-        <footer className="content-width-wrapper">
-          <div className='flex place-content-between items-start max-md:flex-col'>
+        <footer className="bg-col4">
+          <div className='container flex place-content-between items-start max-md:flex-col'>
             <div className='w-6/12 flex place-content-start items-start text-sm max-md:w-full'>
               <div className="footer_link_column mr-20">
-                <p >Product</p>
+                <p>Product</p>
                 <ul>
                   <li><WhitepaperLink /></li>
                 </ul>

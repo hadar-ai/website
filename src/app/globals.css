@@ -6,10 +6,8 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-  --bgColor: #000;
-  --fgColor: #fff;
-  --color1: #8C6E89;
+  --bgColor: #EDF6F9;
+  --fgColor: #000;
 }
 
 * {
@@ -42,16 +40,33 @@ footer {
 }
 
 label {
-  @apply block mb-2 font-heading text-coolGray-400;
+  @apply block mb-2 font-heading text-col1;
 }
 
 input[type=text], input[type=email], input[type=password] {
-  background-color: var(--fgColor);
-  color: var(--bgColor);
+  background-color: var(--bgColor);
+  color: var(--fgColor);
+  border: 1px solid var(--fgColor);
   @apply rounded-md px-4 py-2;
 }
 
 @layer components {
+  .first_block {
+    @apply bg-gradient-to-b from-col3 to-col4 h-screen;
+  }
+
+  .gradient_block_1 {
+      @apply bg-gradient-to-b from-col3 to-col4;
+      height: 900px;
+      max-height: 100%;
+  }
+  
+  .gradient_block_2 {
+    @apply bg-gradient-to-b from-col4 to-col3;
+    height: 900px;
+    max-height: 100%;
+  }
+
   .footer_link_column {
     & > p {
       @apply text-coolGray-400 font-bold mb-8;
@@ -61,22 +76,27 @@ input[type=text], input[type=email], input[type=password] {
     }
   }
 
+  .inline-svg {
+    svg {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      fill: currentColor;
+    }
+  }
+
   .btn {
     border-bottom: none;
-    @apply text-lg px-6 py-2 bg-col6 text-col1 font-body font-bold rounded-xl;
+    @apply text-lg px-6 py-2 bg-col5 text-col3 font-body font-bold rounded-xl;
   }
 
   .box_info {
     border-bottom: none;
-    @apply text-xl px-6 py-2 bg-col4 text-col5 font-body font-bold rounded-xl;
+    @apply text-xl px-6 py-4 bg-col2 text-white font-body rounded-xl;
   }
 
   .box_error {
     border-bottom: none;
-    @apply text-xl px-6 py-2 bg-red-400 text-col5 font-body font-bold rounded-xl;
-  }
-
-  .content-width-wrapper {
-    @apply w-10/12 max-w-5xl mx-auto;
+    @apply text-xl px-6 py-4 bg-red-400 text-white font-body font-bold rounded-xl;
   }
 }

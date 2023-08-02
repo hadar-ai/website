@@ -12,7 +12,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+		container: {
+			center: true,
+			padding: '0.5rem',
+		},
     extend: {
+      screens: {
+        '2xl': '1400px',
+      },
       fontFamily: {
         heading: ['var(--font-comfortaa)'],
         body: ['var(--font-noto-sans)'],
@@ -23,12 +30,11 @@ module.exports = {
     },
     colors: {
       ...colors,
-      col1: '#0D1B2A',
-      col2: '#1B263B',
-      col3: '#415A77',
-      col4: '#778DA9',
-      col5: '#E0E1DD',
-      col6: '#D99EA5',
+      col1: '#006D77',
+      col2: '#83C5BE',
+      col3: '#EDF6F9',
+      col4: '#FFDDD2',
+      col5: '#E29578',
     },
   },  
   plugins: [],

@@ -1,10 +1,10 @@
-export default function Whitepaper() {
+export default function Terms() {
   return (
-    <div>
-      <div className="content-width-wrapper my-32">
+    <main className='first_block'>
+      <div className="container mt-32">
         Terms and conditions coming soon!
       </div>
-    </div>
+    </main>
   )
 }
 

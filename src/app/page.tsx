@@ -2,229 +2,110 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.css";
 
-import { Bulb, Code, Community, Email, Flow1, HomeGraphic1, HomeGraphic2, Linkedin, Nodes, Pay, Person, Trophy } from "@/components/Svg"
-import classnames from 'classnames'
+import { BadForCreators, Community, Flow1, GoodForCreators, Nodes, Pay } from "@/components/Svg"
 import { Form } from '@/components/Form'
 import { sendToMailchimp } from '@/app/actions'
 import { LearnMoreButton, RequestAccessButton } from "@/components/Button";
 
 export default function Home() {
   return (
-    <div>
-      <div className="content-width-wrapper my-32">
-        <div className="flex place-content-between items-center">
-          <div className="w-6/12 mr-20 flex-shrink-0 max-md:w-full max-md:text-center">
-            <h1 className="text-5xl font-heading">
-              Democratizing Data.
-              <br />
-              Shaping AI.
-            </h1>
-            <p className="text-3xl mt-8">
-              Infrastructure for incentivizing the supply of high quality datasets.
-            </p>
-            <div className='mt-20'>
-              <RequestAccessButton />
-            </div>
-          </div>
-          <div>
-            <HomeGraphic1 className="w-5/6 flex-shrink max-md:hidden" />
-          </div>
-        </div>
-      </div>
-      <div className={styles.gradient_block_1}>
-        <div className="content-width-wrapper">
-          <div className="flex place-content-space-between items-center max-md:flex-col">
-            <HomeGraphic2 className="w-5/6 max-md:w-full" />
-            <div className="ml-12 max-md:ml-0 max-md:mt-12">
-              <h2 className="text-5xl font-heading mb-5">Publish data</h2>
-              <p className="text-2xl text-coolGray-300">
-                Hadar helps you monetize your dataset for training AI models in an open, accessible manner.
-              </p>
-            </div>
-          </div>
-          <div className="flex place-content-between items-center mt-28 max-md:flex-col max-md:mt-12">
-            <div className={classnames(styles.sub, 'max-w-sm')}>
-              <p>Easily supply datasets</p>
-              <p>
-                Upload and set pricing terms. Our infrastructure handles the rest.
-              </p>
-            </div>
-            <div className={classnames(styles.sub, 'max-w-sm max-md:mt-10')}>
-              <p>Ensure high quality</p>
-              <p>
-                Customize your metadata. Add fresh data regularly. Invite verifiers.
-              </p>
-            </div>
-          </div>
-          <div className="text-center mt-28">
-            <LearnMoreButton />
-          </div>
-        </div>
-      </div>
-      <div className={styles.gradient_block_1}>
-        <div className="content-width-wrapper">
-          <h2 className="font-heading text-center text-5xl leading-tight">
-            Contribute to datasets.
-            <br />
-            Share in the future value.
-          </h2>
-          <div className="mt-20 flex place-content-between items-start max-md:flex-col-reverse max-md:items-center max-md:place-content-center">
-            <div className="mr-8 max-md:mr-0">
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Code />
-                </div>
-                <div className={styles.sub}>
-                  <p>Provide Data</p>
-                  <p>Publish high quality dataasets.</p>
-                </div>
-              </div>
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Person />
-                </div>
-                <div className={styles.sub}>
-                  <p>Verify Data</p>
-                  <p>Review data and guarantee its quality.</p>
-                </div>
-              </div>
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Trophy />
-                </div>
-                <div className={styles.sub}>
-                  <p>Sponsor Data</p>
-                  <p>Reduce the cost of data access for all.</p>
-                </div>
-              </div>
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Bulb />
-                </div>
-                <div className={styles.sub}>
-                  <p>Request Data</p>
-                  <p>
-                    Set standards and invite verifiers to help with curation.
-                  </p>
-                </div>
-              </div>
-              <div className="mt-20 max-md:text-center">
-                <LearnMoreButton />
-              </div>
-            </div>
-            <Flow1 className="w-7/12 max-md:w-full max-md:mb-10" />
-          </div>
-        </div>
-      </div>
-      <div className={styles.gradient_block_1}>
-        <div className="content-width-wrapper">
-          <div className="flex place-content-center items-center max-md:flex-col">
-            <div className="w-7/12 max-md:w-full">
-              <h2 className="text-5xl font-heading mb-10">Our Mission</h2>
-              <p className="text-2xl mb-20">
-                At Hadar, we believe that an incentivized data bank that is
-                openly curated and accessible by the crowd is needed to democratize
-                and promote AI innovation.
-              </p>
-              <LearnMoreButton className="max-md:hidden" />              
-            </div>
-            <div className="ml-20 max-md:ml-0">
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Nodes />
-                </div>
-                <div className={styles.sub}>
-                  <p>Open access</p>
-                  <p>Niché and ex-proprietary datasets now available to all.</p>
-                </div>
-              </div>
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Pay />
-                </div>
-                <div className={styles.sub}>
-                  <p>Profit-sharing</p>
-                  <p>
-                    Value shared among users who provide, curate and verify
-                    data.
-                  </p>
-                </div>
-              </div>
-              <div className={styles.icon_with_content}>
-                <div>
-                  <Community />
-                </div>
-                <div className={styles.sub}>
-                  <p>Decentralized Governance</p>
-                  <p>Built the community, governed by the community.</p>
-                </div>
-              </div>
-              <div className="mt-20 text-center hidden max-md:block">
-                <LearnMoreButton  />              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={styles.gradient_block_1}>
-        <div className="content-width-wrapper">
-          <h2 className="text-5xl text-center font-heading mb-10">Team</h2>
-          <p
-            className={classnames(styles.content_sub_text, "text-center mb-20")}
-          >
-            Combined 20+ years building tech products in ML and blockchain that
-            served millions of users, managed billions in AUM, and generated
-            billions in trading volume.
+    <main>
+      <div className='first_block flex flex-col items-center justify-center'>
+        <div className='container text-center'>
+          <h1 className="text-6xl font-heading">
+            Ethically powered AI data.
+          </h1>
+          <p className="text-3xl mt-8 font-thin">
+            Creative work is valuable. We ensure creators get paid for AI.
           </p>
-          <div className="flex place-content-around items-center">
-            <div className={styles.team_member}>
-              <Image
-                alt="Sylvia Chen"
-                src="/images/sylvia.jpg"
-                width={244}
-                height={281}
-                unoptimized
-              />
+          <div className='mt-14'>
+            <RequestAccessButton />
+          </div>
+        </div>
+      </div>
+      <div className='gradient_block_2'>
+        <div className="container h-full text-center flex flex-col items-center justify-center">
+          <h2 className="text-4xl font-heading">
+            We provide training data, and incentivise creators.
+          </h2>
+          <Flow1 className="w-full mt-16 mb-14" />
+          <p className="text-2xl font-thin w-9/12 max-md:w-full">
+            We work with existing publishers and creators directly to ensure we provide the highest quality training data.
+          </p>
+        </div>
+      </div>
+      <div className='gradient_block_1'>
+        <div className="container h-full text-center flex flex-col items-center justify-center">
+          <h2 className="text-4xl font-heading">
+            Data has value. Creators should be compensated.
+          </h2>
+          <BadForCreators className="w-full mt-20 mb-16" />
+          <GoodForCreators className="w-full" />
+        </div>
+      </div>
+      <div className='gradient_block_2'>
+        <div className="container h-full flex flex-row place-content-center items-center max-md:flex-col">
+          <div className="w-7/12 max-md:w-full">
+            <h2 className="text-4xl font-heading mb-16">Our Mission</h2>
+            <p className="text-2xl mb-10 font-thin">
+              At Hadar, we believe that an incentivized data bank empowers both 
+              creators as well as AI modellers.
+            </p>
+            <p className="text-2xl mb-16 font-thin">
+              By building a platform where users get paid for contributing quality 
+              data, we empower creators financially while providing AI companies 
+              access to diverse, ethical datasets.
+            </p>
+            <LearnMoreButton className="max-md:hidden" />              
+          </div>
+          <div className="ml-20 max-md:ml-0">
+            <div className={styles.icon_with_content}>
               <div>
-                <h3>Silvia Chen</h3>
-                <p>CEO, Co-founder</p>
-                <a href="https://www.linkedin.com/in/silvia-chen/" className="mt-4">
-                  <Linkedin />
-                </a>
+                <Nodes />
+              </div>
+              <div className={styles.sub}>
+                <p>Open access</p>
+                <p>High quality ethical datasets that everyone can use commercially.</p>
               </div>
             </div>
-            <div className={styles.team_member}>
-              <Image
-                alt="Ramesh Nair"
-                src="/images/ram.jpg"
-                width={244}
-                height={281}
-                unoptimized
-              />
+            <div className={styles.icon_with_content}>
               <div>
-                <h3>Ramesh Nair</h3>
-                <p>CTO, Co-founder</p>
-                <a href="https://www.linkedin.com/in/hiddentao/" className="mt-4">
-                  <Linkedin />
-                </a>
+                <Pay />
               </div>
+              <div className={styles.sub}>
+                <p>Revenue-sharing</p>
+                <p>
+                  Value shared amongst stakeholders who supply and verify the data.
+                </p>
+              </div>
+            </div>
+            <div className={styles.icon_with_content}>
+              <div>
+                <Community />
+              </div>
+              <div className={styles.sub}>
+                <p>Decentralized Governance</p>
+                <p>Built for the community, governed by the community.</p>
+              </div>
+            </div>
+            <div className="mt-20 text-center hidden max-md:block">
+              <LearnMoreButton  />              
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.gradient_block_1}>
+      <div className='gradient_block_1'>
         <a id="request_access" href="#"></a>
-        <div className="content-width-wrapper">
-          <div className='flex place-content-between items-center max-md:flex-col'>
-            <div className='w-5/12 flex-shrink-0 max-md:w-full'>
-              <h2 className="text-5xl font-heading mb-10">Early Access</h2>
-              <p className="text-xl">
-                We will grant limited access to early adopters along with a
-                special welcome package.
-              </p>
-            </div>
-            <div className='w-6/12 flex-grow-0 max-md:w-full max-md:mt-20'>
-              <Form className='w-full' endpoint={sendToMailchimp} successMessage='Thanks. Please follow the confirmation link in the email we have sent you.'>
+        <div className="container h-full flex flex-col items-center justify-center">
+          <h2 className="text-5xl font-heading text-center ">
+            Gain Early Access
+          </h2>
+          <p className="text-2xl font-thin mt-10 text-center">
+            We will grant limited access to early adopters along with some special perks.
+          </p>
+          <div className='w-6/12 flex-grow-0 mt-12 max-md:w-full max-md:mt-20'>
+            <Form className='w-full text-center flex flex-col justify-start items-center' endpoint={sendToMailchimp} successMessage='Thanks. Please follow the confirmation link in the email we have sent you.'>
+              <div className="text-left">
                 <div className="mb-10">
                   <label>Full name</label>
                   <input
@@ -248,38 +129,32 @@ export default function Home() {
                   <label>Select all that apply</label>
                   <div className="mb-1">
                     <input type="checkbox" name="interests" value="access" />
-                    <span className="ml-2">I need to access datasets</span>
+                    <span className="ml-2">I want to access data to train a model</span>
                   </div>
                   <div className="mb-1">
                     <input type="checkbox" name="interests" value="publish" />
-                    <span className="ml-2">I want to publish datasets</span>
+                    <span className="ml-2">I want to supply data ethically</span>
                   </div>
                   <div className="mb-1">
                     <input type="checkbox" name="interests" value="source" />
                     <span className="ml-2">
-                      I want to source datasets that don&apos;t exist
+                      I want to ethically source a dataset
                     </span>
                   </div>
                   <div className="mb-1">
                     <input type="checkbox" name="interests" value="verify" />
-                    <span className="ml-2">I can verify datasets</span>
-                  </div>
-                  <div className="mb-1">
-                    <input type="checkbox" name="interests" value="sponsor" />
-                    <span className="ml-2">
-                      I want to sponsor dataset access
-                    </span>
+                    <span className="ml-2">I want to help with verifying data quality</span>
                   </div>
                 </div>
-                <div>
-                  <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
-                </div>
-              </Form>
-            </div>
+              </div>
+              <div>
+                <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
+              </div>
+            </Form>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -1,46 +1,23 @@
 @tailwind components;
 
 @layer components {
-  .gradient_block_1 {
-    @apply bg-gradient-to-b from-col2 to-black py-28; 
-  }
-
-  .standard_block_1 {
-    @apply bg-transparent py-28;
-  }
-
-  .content_sub_text {
-    @apply text-xl text-coolGray-400;
-  }
-
   .sub {
     & > p:first-child {
-      @apply text-2xl font-heading mb-2;
+      @apply text-xl font-heading font-bold mb-2;
     }
     & > p:nth-child(2) {
-      @apply text-xl text-coolGray-400;
+      @apply text-lg font-body;
     }
   }
 
   .icon_with_content {
-    @apply flex place-content-start items-center mb-12;
+    @apply flex place-content-start items-center mb-12 p-4 rounded-md border-col1 border;
 
     & > div:first-child {
-      @apply flex items-center place-content-center w-16 h-16 rounded-md bg-col4 mr-6 flex-shrink-0 shadow-icon;
+      @apply flex items-center place-content-center w-16 h-16 mr-6 flex-shrink-0;
 
-      &>svg {
-        @apply w-8 h-8 fill-current;
-      }
-    }
-  }
-
-  .team_member {
-    @apply m-4;
-
-    & > div {
-      @apply text-center mt-4;
-      a {
-        @apply inline-block border-none;
+      & > svg {
+        @apply w-12 h-12 fill-black;
       }
     }
   }
