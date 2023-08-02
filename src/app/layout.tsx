@@ -62,6 +62,7 @@ export default function RootLayout({
                 <p>Product</p>
                 <ul>
                   <li><WhitepaperLink /></li>
+                  <li><Link href="/about">About us</Link></li>
                 </ul>
               </div>
               <div className='footer_link_column'>
