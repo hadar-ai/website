@@ -58,7 +58,7 @@ export default function Home() {
             </p>
             <LearnMoreButton className="max-md:hidden" />              
           </div>
-          <div className="ml-20 max-md:ml-0">
+          <div className="ml-20 max-md:hidden">
             <div className={styles.icon_with_content}>
               <div>
                 <Nodes />
@@ -103,10 +103,10 @@ export default function Home() {
           <p className="text-2xl font-thin mt-10 text-center">
             We will grant limited access to early adopters along with some special perks.
           </p>
-          <div className='w-6/12 flex-grow-0 mt-12 max-md:w-full max-md:mt-20'>
+          <div className='w-6/12 flex-grow-0 mt-12 max-md:w-full max-md:mt-10'>
             <Form className='w-full text-center flex flex-col justify-start items-center' endpoint={sendToMailchimp} successMessage='Thanks. Please follow the confirmation link in the email we have sent you.'>
               <div className="text-left">
-                <div className="mb-10">
+                <div className="mb-6">
                   <label>Full name</label>
                   <input
                     name="fullName"
@@ -116,7 +116,7 @@ export default function Home() {
                     className="w-60"
                   />
                 </div>
-                <div className="mb-10">
+                <div className="mb-6">
                   <label>Email address</label>
                   <input
                     name="email"
@@ -147,7 +147,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="w-full max-md:w-11/12">
                 <em className='text-sm'>By submitting this form you agree to our <Link href="/terms">terms and conditions</Link> and <Link href="/privacy">privacy policy</Link>.</em>
               </div>
             </Form>

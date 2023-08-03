@@ -50,21 +50,23 @@ input[type=text], input[type=email], input[type=password] {
   @apply rounded-md px-4 py-2;
 }
 
+@screen md {
+  .gradient_block_1, .gradient_block_2 {
+    height: 900px;
+  }
+}
+
 @layer components {
   .first_block {
     @apply bg-gradient-to-b from-col3 to-col4 h-screen;
   }
 
   .gradient_block_1 {
-      @apply bg-gradient-to-b from-col3 to-col4;
-      height: 900px;
-      max-height: 100%;
+    @apply bg-gradient-to-b from-col3 to-col4 h-screen max-h-full;
   }
   
   .gradient_block_2 {
-    @apply bg-gradient-to-b from-col4 to-col3;
-    height: 900px;
-    max-height: 100%;
+    @apply bg-gradient-to-b from-col4 to-col3 h-screen max-h-full;
   }
 
   .footer_link_column {
