@@ -84,8 +84,8 @@ export default function Home() {
                 <Community />
               </div>
               <div className={styles.sub}>
-                <p>Decentralized Governance</p>
-                <p>Built for the community, governed by the community.</p>
+                <p>Community Governance</p>
+                <p>Built for the community, shaped by the community.</p>
               </div>
             </div>
             <div className="mt-20 text-center hidden max-md:block">
