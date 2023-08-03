@@ -15,11 +15,16 @@ module.exports = {
 		container: {
 			center: true,
 			padding: '1.5rem',
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1024px',
+        '2xl': '1024px',
+      },      
 		},
     extend: {
-      screens: {
-        '2xl': '1400px',
-      },
       fontFamily: {
         heading: ['var(--font-comfortaa)'],
         body: ['var(--font-noto-sans)'],
