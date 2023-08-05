@@ -58,7 +58,7 @@ input[type=text], input[type=email], input[type=password] {
 
 @layer components {
   .first_block {
-    @apply bg-gradient-to-b from-col3 to-col4 h-screen;
+    @apply bg-gradient-to-b from-col3 to-col4;
   }
 
   .gradient_block_1 {

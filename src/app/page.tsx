@@ -9,7 +9,7 @@ import { LearnMoreButton, RequestAccessButton } from "@/components/Button";
 export default function Home() {
   return (
     <main>
-      <div className='first_block flex flex-col items-center justify-center'>
+      <div className='first_block h-screen flex flex-col items-center justify-center'>
         <div className='container text-center'>
           <h1 className="text-6xl font-heading">
             Ethically powered AI data.
