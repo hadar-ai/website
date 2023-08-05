@@ -1,10 +1,13 @@
+import { Markdown } from '@/components/Markdown'
+// @ts-ignore
+import termsContent from './terms.md' 
+import { Content } from '@/components/Content'
+
+
 export default function Terms() {
   return (
-    <main className='first_block'>
-      <div className="container mt-32">
-        Terms and conditions coming soon!
-      </div>
-    </main>
+    <Content className="pb-20">
+      <Markdown markdown={termsContent} />
+    </Content>
   )
 }
-

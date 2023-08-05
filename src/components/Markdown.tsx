@@ -3,10 +3,11 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeReact from 'rehype-react'
+import rehypeSlug from 'rehype-slug'
 
 import styles from './Markdown.module.css'
 import { DefaultProps } from "./interfaces"
-import classnames from "classnames"
+import { cn } from "@/utils"
 
 interface Props extends DefaultProps {
   markdown: string
@@ -25,6 +26,7 @@ export const Markdown: React.FunctionComponent<Props> = ({ markdown, className }
     const ret = unified()
       .use(remarkParse)
       .use(remarkRehype)
+      .use(rehypeSlug)
       .use(rehypeReact, { 
         createElement, 
         Fragment,
@@ -35,7 +37,7 @@ export const Markdown: React.FunctionComponent<Props> = ({ markdown, className }
   }, [ markdown ])
 
   return (
-    <div className={classnames(styles.markdown, className)}>{output}</div>
+    <div className={cn(styles.markdown, className)}>{output}</div>
   )
 }
 
