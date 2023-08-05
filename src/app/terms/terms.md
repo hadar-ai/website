@@ -10,7 +10,7 @@ We operate the website [http://www.hadar.com](http://www.hadar.com) (the "**Site
 
 We offer a platform that creative works get published and ethically sourced for AI
 
-You can contact us by email at [teamhadar@gmail.com](teamhadar@gmail.com) or by mail to 447 17th Street, 1402, Oakland, CA 94612, United States.
+You can contact us by email at [teamhadar@gmail.com](mailto:teamhadar@gmail.com) or by mail to 447 17th Street, 1402, Oakland, CA 94612, United States.
 
 These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("**you**"), and Hadar, Inc, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
 
@@ -91,7 +91,7 @@ solely for your personal, non-commercial use or internal business purpose.
 
 Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.
 
-If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: [teamhadar@gmail.com](teamhadar@gmail.com). If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
+If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: [teamhadar@gmail.com](mailto:teamhadar@gmail.com). If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.
 
 We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.
 

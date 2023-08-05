@@ -4,7 +4,7 @@ _Last updated: August 04, 2023_
 
 This privacy policy for Hadar Inc ("**Company**," "**we**," "**us**," or "**our**"), describes how and why we might collect, store, use, and/or share ("**process**") your information when you use our services ("**Services**"), such as when you:
 
-**Questions or concerns?** Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [teamhadar@gmail.com](teamhadar@gmail.com).
+**Questions or concerns?** Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at [teamhadar@gmail.com](mailto:teamhadar@gmail.com).
 
 ## SUMMARY OF KEY POINTS
 
@@ -128,7 +128,7 @@ When we have no ongoing legitimate business need to process your personal inform
 
 _In Short: We do not knowingly collect data from or market to children under 18 years of age._
 
-We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [teamhadar@gmail.com](teamhadar@gmail.com).
+We do not knowingly solicit data from or market to children under 18 years of age. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at [teamhadar@gmail.com](mailto:teamhadar@gmail.com).
 
 ## 9. WHAT ARE YOUR PRIVACY RIGHTS?
 
@@ -168,7 +168,7 @@ We may update this privacy notice from time to time. The updated version will be
 
 ## 13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
 
-If you have questions or comments about this notice, you may email us at [teamhadar@gmail.com](teamhadar@gmail.com) or contact us by post at:
+If you have questions or comments about this notice, you may email us at [teamhadar@gmail.com](mailto:teamhadar@gmail.com) or contact us by post at:
 
 Hadar, Inc
 
